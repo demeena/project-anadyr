@@ -1,0 +1,137 @@
+.dashboard-container {
+    width: 90%; /* Увеличили ширину контейнера */
+    max-width: 800px; /* Максимальная ширина для больших экранов */
+    margin: 0 auto;
+    padding: 20px; 
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Контент разбит на два блока, которые находятся рядом */
+  .dashboard-content {
+    display: flex;
+    justify-content: space-between; /* Разделяем секции */
+    gap: 20px; /* Отступы между секциями */
+    flex-wrap: wrap; /* Для адаптации на малых экранах */
+  }
+  .title {
+ text-align: center;
+  }
+  /* Левая и правая секции */
+  .left-section, .right-section {
+    width: 45%; /* Секции занимают по 45% ширины каждая */
+    min-width: 250px; /* Минимальная ширина для адаптивности */
+  }
+  
+  .dashboard-user-info {
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .dashboard-section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  /* Поля ввода */
+  .dashboard-section input, 
+  .dashboard-card-form input, 
+  .dashboard-deposit-form input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  /* Кнопки */
+  .dashboard-section button, 
+  .dashboard-card-form button, 
+  .dashboard-deposit-form button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Кнопки на всю ширину */
+  }
+  
+  .dashboard-section button:hover,
+  .dashboard-card-form button:hover,
+  .dashboard-deposit-form button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Заголовки секций */
+  .dashboard-section-header {
+    font-size: 18px;
+    color: #444;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  /* Блоки для ввода данных карты */
+  .dashboard-card-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  /* Форма для пополнения баланса */
+  .dashboard-deposit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  /* Элемент забронированного транспорта */
+  .dashboard-transport-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e6f7ff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  /* Кнопка отмены бронирования */
+  .dashboard-transport-item button {
+    padding: 6px 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .dashboard-transport-item button:hover {
+    background-color: #e53935;
+  }
+  /* Добавляем стиль для контейнера информации о транспорте и таймера */
+.transport-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.transport-info p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Стили для таймера */
+.timer {
+  font-size: 14px;
+  color: #ff0000; /* Красный цвет для выделения таймера */
+  font-weight: bold;
+  text-align: left;
+}
