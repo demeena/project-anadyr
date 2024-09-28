@@ -13,7 +13,7 @@ const loadYandexMaps = () => {
     if (!existingScript) {
       const script = document.createElement('script');
       script.id = 'yandex-maps-script';
-      script.src = 'https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=08ba13f5-9c1f-4096-a883-a491a452d2c3'; // Вставь свой API ключ
+      script.src = 'https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=СЮДА ВАШ КЛЮЧ'; // Вставь свой API ключ
       script.onload = () => {
         if (window.ymaps) {
           resolve(window.ymaps);
